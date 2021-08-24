@@ -23,7 +23,8 @@ const Kucoin = {
   sign: function(endpoint, params, method) {
     let header = {
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin": "*"
       }
     }
     let nonce = Date.now() + ''
