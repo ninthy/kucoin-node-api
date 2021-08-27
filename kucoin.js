@@ -4,11 +4,6 @@ const crypto = require('crypto')
 const Kucoin = {
   init: function(config) {
     let url = ''
-    if (config.environment === 'live') {
-      url = 'https://api.kucoin.com'
-    } else {
-      url = 'https://openapi-sandbox.kucoin.com'
-    }
     this.environment = config.environment
     this.baseURL = url
     this.secretKey = config.secretKey
