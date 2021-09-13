@@ -3,7 +3,7 @@ const crypto = require('crypto')
 
 const Kucoin = {
   init: function(config) {
-    let url = ''
+    let url = '/kucoin'
     this.environment = config.environment
     this.baseURL = url
     this.secretKey = config.secretKey
